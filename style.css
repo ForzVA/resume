@@ -1,0 +1,223 @@
+.sheet {
+  display: flex;
+  align-items:stretch;
+  justify-content: center;
+  background-color: white;
+  flex-direction:row;
+  margin-top: 45px;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(109,191,184);
+    width: 600px;
+    height: 1100px;
+    position: relative;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.sidebar{
+    display: flex;
+    background-color: rgb(80, 83, 80);
+    display:inline-block;
+    height: 1100px;
+    width: 200px;
+    border-radius: 15px 0px 0px 15px;
+}   
+
+.photo{
+    margin: 25px 25px;
+    border-radius: 100px;
+    object-fit: cover;
+    border: 2px solid rgb(255,240,208) ;
+}
+
+.name{
+    margin-top: -10px;
+    font-size: 30px; 
+    text-align: center;
+    color: rgb(255,240,208);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+.contacts{
+    font-size: 17px;
+    text-align: center;
+    color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.languages{
+    margin:0px;
+    font-size: 18px;
+    color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+
+
+.container-skillbar{
+    background-color: #ddd;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white; 
+    border-radius: 15px 0px 0px 15px;
+    font: icon;   
+}
+
+.html{
+    width: 50%; 
+    background-color: burlywood; 
+}
+.css {
+    width: 55%; 
+    background-color:burlywood;
+}
+.js {
+    width: 60%;
+     background-color: burlywood;
+} 
+.python {
+    width: 65%;
+    background-color: burlywood;
+} 
+
+.skill-text {
+    text-align: center;
+    margin-bottom: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: burlywood;
+}
+
+.skill-header {
+    text-align: center;
+    color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:0px;
+    margin-top: 25px;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 10px 80px;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: rgb(123, 105, 228);
+  top: 5px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+  
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+  
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color:white;
+  border: 4px solid rgb(123, 105, 228);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+  
+/* Place the container to the left */
+.left {
+  left: -80;
+}
+  
+  /* Place the container to the right */
+.right {
+  left: 50%;
+}
+  
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(218, 12, 12);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  margin-left: 50px;
+}
+  
+  /* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+  /* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+  
+  /* The actual content */
+.content {
+  padding: 10px 10px;  
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  hyphens: auto;
+}
+
+.timeline-text{
+    margin: 5px;
+    color: rgb(123, 105, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.experience{
+  display:inline-block;
+  position: relative;
+	border: 2px solid #7a10a5;
+  border-radius: 15px;
+	height: 30px;
+	width: 120px;
+	margin: 5px;
+  padding: 10px 25px 0px 25px;
+  text-align: center;
+  font: 18px Verdana, Geneva, Tahoma, sans-serif;
+  background-color: azure;
+}
